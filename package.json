@@ -1,0 +1,13 @@
+{
+  "name": "carrinho_compras_shopee_project",
+  "version": "1.0.0",
+  "description": "Projeto Carrinho de compras da shoope",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start" : "node --watch ./src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
