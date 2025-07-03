@@ -22,7 +22,12 @@ async function deleteItemCart(userCart, nameItem) {
 }
 
 // -> Remover um item da soma total de items
-async function removeItemOfSumCart(userCart, index) {}
+async function removeItemOfSumCart(userCart, index) {
+   
+    if(userCart[index].quantity > 1) {
+        userCart[index].quantity--
+    }
+}
 
 // ✅ -> Totalizador do carrinho
 async function sumTotalCart(userCart) {
@@ -32,6 +37,7 @@ async function sumTotalCart(userCart) {
   console.log(res);
 }
 
+// ✅ -> Display para mostrar a lista
 async function displayCart(userCart) {
     console.log("Shopee cart list:")
     userCart.forEach((item, index) => {

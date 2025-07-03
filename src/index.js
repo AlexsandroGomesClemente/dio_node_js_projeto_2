@@ -17,10 +17,10 @@ await cartServices.addItemCart(myWishList, item2);
 await cartServices.addItemCart(myCart, item3);
 
 console.log("*******************************");
-console.log("Shopee Cart TOTAL IS!");
-await cartServices.sumTotalCart(myCart);
+cartServices.displayCart(myCart);
 console.log("*******************************\n");
 
 console.log("*******************************");
-cartServices.displayCart(myCart);
+console.log("Shopee Cart TOTAL IS!");
+await cartServices.sumTotalCart(myCart);
 console.log("*******************************");
